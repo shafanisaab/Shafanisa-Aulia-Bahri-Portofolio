@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO — Electronic Engineer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-600 font-sans antialiased selection:bg-brand-blue selection:text-white overflow-x-hidden min-h-screen flex flex-col">
+
+    <div class="fixed top-[-5%] left-[-5%] w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-[100px] z-0 pointer-events-none floating-slow"></div>
+    <div class="fixed bottom-[-10%] right-[-5%] w-[600px] h-[600px] bg-teal-400/20 rounded-full blur-[120px] z-0 pointer-events-none floating-fast"></div>
+
+    <nav id="navbar" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-5xl bg-white/70 backdrop-blur-md border border-slate-200/50 rounded-full px-6 py-3.5 flex justify-between items-center shadow-lg shadow-slate-200/50 transition-all duration-300">
+        <a href="#" onclick="switchTab('about')" class="font-extrabold tracking-wider text-slate-800 text-sm flex items-center gap-2.5">
+            <span class="w-2 h-2 rounded-full bg-brand-blue animate-ping"></span>
+            PORTFOLIO
+        </a>
+        
+        <div class="hidden md:flex items-center gap-2 text-xs font-mono tracking-wider relative bg-slate-100/80 p-1 rounded-full border border-slate-200/40">
+            <div id="nav-indicator" class="absolute top-1 bottom-1 left-1 rounded-full bg-white shadow-sm border border-slate-200/50 transition-all duration-500 ease-out z-0"></div>
+            
+            <button id="nav-about" onclick="switchTab('about')" class="nav-link text-brand-blue font-bold px-4 py-1.5 rounded-full transition duration-300 relative z-10">ABOUT</button>
+            <button id="nav-skills" onclick="switchTab('skills')" class="nav-link text-slate-500 hover:text-brand-blue px-4 py-1.5 rounded-full transition duration-300 relative z-10">SKILLS</button>
+            <button id="nav-experience" onclick="switchTab('experience')" class="nav-link text-slate-500 hover:text-brand-blue px-4 py-1.5 rounded-full transition duration-300 relative z-10">EXPERIENCE</button>
+            <button id="nav-education" onclick="switchTab('education')" class="nav-link text-slate-500 hover:text-brand-blue px-4 py-1.5 rounded-full transition duration-300 relative z-10">EDUCATION</button>
+            <button id="nav-projects" onclick="switchTab('projects')" class="nav-link text-slate-500 hover:text-brand-blue px-4 py-1.5 rounded-full transition duration-300 relative z-10">PROJECTS</button>
+        </div>
+        
+        <div class="flex items-center gap-4">
+            <a href="cv-shafanisa-aulia.pdf" target="_blank" class="font-mono text-xs text-white bg-gradient-to-r from-brand-blue to-brand-teal hover:shadow-lg hover:shadow-brand-blue/30 transition-all px-5 py-2 rounded-full font-semibold">
+                CV ↓
+            </a>
+        </div>
+    </nav>
+
+    <main class="relative z-10 max-w-5xl mx-auto px-6 pt-40 pb-16 flex-grow w-full flex items-center justify-center">
+        
+        <div id="tab-container" class="w-full min-h-[450px] relative">
+            
+            <section id="about" class="tab-section block active-tab-anim">
+                <div class="flex flex-col md:flex-row items-center gap-12 pt-6">
+                    <div class="relative w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-3xl p-1 bg-gradient-to-br from-brand-blue to-brand-teal shadow-xl shadow-brand-blue/20 overflow-hidden group floating-slow">
+                        <img src="image/shafanisa.JPEG" alt="Shafanisa Aulia Bahri" class="w-full h-full object-cover rounded-[22px] object-top transition duration-500 group-hover:scale-105">
+                    </div>
+                    
+                    <div class="space-y-5 text-center md:text-left flex-1">
+                        <div class="inline-flex items-center gap-2 text-brand-blue text-xs font-mono px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100">
+                            <i class="fa-solid fa-bolt text-[10px] animate-pulse"></i> A.Md.T. (Electronics Engineering)
+                        </div>
+                        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                            Shafanisa Aulia Bahri
+                        </h1>
+                        
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed max-w-xl pt-1">
+                            An Electronic Engineering graduate with expertise in industrial automation, PLC programming, microcontrollers, and IoT. Possesses practical experience in panel wiring, HMI monitoring system development, and control system design. Highly adaptable with strong analytical skills, ready to make a significant contribution to the electronics industry.
+                        </p>
+                        
+                        <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-3 text-xs font-mono text-slate-600">
+                            <a href="mailto:shafanisa.33223024@mhs.polines.ac.id" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-brand-blue hover:text-white transition-all duration-300 border border-slate-200 hover:border-brand-blue shadow-sm hover:shadow-md group">
+                                <i class="fa-solid fa-envelope text-brand-blue group-hover:text-white"></i> Email
+                            </a>
+                            <a href="https://wa.me/628970036069" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-green-500 hover:text-white transition-all duration-300 border border-slate-200 hover:border-green-500 shadow-sm hover:shadow-md group">
+                                <i class="fa-brands fa-whatsapp text-green-500 group-hover:text-white text-sm"></i> WhatsApp
+                            </a>
+                            <a href="https://www.linkedin.com/in/shafanisa-aulia-bahri-54b24b375" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-blue-600 hover:text-white transition-all duration-300 border border-slate-200 hover:border-blue-600 shadow-sm hover:shadow-md group">
+                                <i class="fa-brands fa-linkedin text-blue-600 group-hover:text-white text-sm"></i> LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/shafanisaab" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-pink-500 hover:text-white transition-all duration-300 border border-slate-200 hover:border-pink-500 shadow-sm hover:shadow-md group">
+                                <i class="fa-brands fa-instagram text-pink-500 group-hover:text-white text-sm"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="skills" class="tab-section hidden">
+                <div class="flex items-baseline justify-between border-b border-slate-200 pb-4 mb-8">
+                    <h2 class="text-2xl font-bold text-slate-800 tracking-tight flex items-center gap-3">
+                        <span class="text-brand-blue font-mono text-lg">01.</span> Skills
+                    </h2>
+                    <span class="text-xs font-mono text-brand-blue tracking-widest hidden md:inline-block">// TECHNICAL EXPERTISE</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="glow-card p-6 rounded-2xl bg-white border border-slate-100 shadow-lg shadow-slate-200/40 flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center border border-blue-100 shrink-0 transition-transform group-hover:-translate-y-1">
+                            <i class="fa-solid fa-gears text-xl text-brand-blue"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-800 tracking-tight">PLC and Industrial Automation</h3>
+                    </div>
+                    <div class="glow-card p-6 rounded-2xl bg-white border border-slate-100 shadow-lg shadow-slate-200/40 flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center border border-indigo-100 shrink-0 transition-transform group-hover:-translate-y-1">
+                            <i class="fa-solid fa-microchip text-xl text-indigo-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-800 tracking-tight">Microcontroller</h3>
+                    </div>
+                    <div class="glow-card p-6 rounded-2xl bg-white border border-slate-100 shadow-lg shadow-slate-200/40 flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center border border-teal-100 shrink-0 transition-transform group-hover:-translate-y-1">
+                            <i class="fa-solid fa-wifi text-xl text-brand-teal"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-800 tracking-tight">Internet of Things (IoT)</h3>
+                    </div>
+                    <div class="glow-card p-6 rounded-2xl bg-white border border-slate-100 shadow-lg shadow-slate-200/40 flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-xl bg-rose-50 flex items-center justify-center border border-rose-100 shrink-0 transition-transform group-hover:-translate-y-1">
+                            <i class="fa-solid fa-sliders text-xl text-rose-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-800 tracking-tight">Control Systems</h3>
+                    </div>
+                    <div class="glow-card p-6 rounded-2xl bg-white border border-slate-100 shadow-lg shadow-slate-200/40 flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center border border-emerald-100 shrink-0 transition-transform group-hover:-translate-y-1">
+                            <i class="fa-solid fa-display text-xl text-emerald-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-800 tracking-tight">HMI (Human Machine Interface)</h3>
+                    </div>
+                    <div class="glow-card p-6 rounded-2xl bg-white border border-slate-100 shadow-lg shadow-slate-200/40 flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center border border-amber-100 shrink-0 transition-transform group-hover:-translate-y-1">
+                            <i class="fa-solid fa-plug text-xl text-amber-500"></i>
+                        </div>
+                        <h3 class="text-sm font-bold text-slate-800 tracking-tight">Panel Wiring</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="tab-section hidden">
+                <div class="flex items-baseline justify-between border-b border-slate-200 pb-4 mb-8">
+                    <h2 class="text-2xl font-bold text-slate-800 tracking-tight flex items-center gap-3">
+                        <span class="text-brand-blue font-mono text-lg">02.</span> Experience
+                    </h2>
+                    <span class="text-xs font-mono text-brand-blue tracking-widest hidden md:inline-block">// INDUSTRIAL WORK</span>
+                </div>
+
+                <div class="glow-card p-6 md:p-8 rounded-3xl bg-white border border-slate-100 shadow-xl shadow-slate-200/50 border-l-4 border-l-brand-blue space-y-6">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Engineering Intern</h3>
+                            <a href="https://www.redesma.tech/" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-brand-blue hover:underline"><i class="fa-solid fa-link text-xs mr-1"></i> CV Rekayasa Desain Manufaktur</a>
+                        </div>
+                        <span class="text-xs font-mono font-semibold text-slate-600 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">Feb 2025 — Jul 2025</span>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        During my internship at CV. Rekayasa Desain Manufaktur, I was responsible for the design and development of industrial automation systems, encompassing both hardware and software integration. My duties included designing temperature data acquisition systems using HMI-based Haiwell SCADA and configuring data communication via RS-485 Modbus and MQTT protocols. On the hardware side, I was involved in PCB design, microcontroller soldering, and electrical panel assembly for various devices, such as Force Plates and automatic hand sanitizers. Furthermore, I ensured system precision by testing temperature sensors and calibrating load cells. As part of my technical documentation tasks, I developed operator SOPs, authored a journal regarding IoT-based Building Power Monitoring systems, and compiled training materials on industrial automation and PLC programming.
+                    </p>
+
+                    <div class="space-y-3">
+                        <h4 class="text-xs font-mono font-bold text-slate-400 tracking-wider flex items-center gap-2">
+                            <i class="fa-regular fa-image"></i> DOCUMENTATION PHOTO
+                        </h4>
+                        <div class="relative group w-full md:max-w-2xl aspect-video rounded-xl overflow-hidden border border-slate-200/60 bg-slate-100 shadow-sm">
+                            <img src="image/magang.jpeg" alt="Internship Documentation" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-350 flex items-end p-4">
+                                <p class="text-xs font-mono font-medium text-white">Engineering Internship</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono font-semibold text-slate-600 border-t border-slate-100 pt-4">
+                        <span class="px-2.5 py-1 rounded-md bg-blue-50 border border-blue-100 text-brand-blue">Haiwell SCADA</span>
+                        <span class="px-2.5 py-1 rounded-md bg-blue-50 border border-blue-100 text-brand-blue">PT-100 Sensors</span>
+                        <span class="px-2.5 py-1 rounded-md bg-blue-50 border border-blue-100 text-brand-blue">MQTT Architecture</span>
+                        <span class="px-2.5 py-1 rounded-md bg-blue-50 border border-blue-100 text-brand-blue">Load Cell</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="tab-section hidden">
+                <div class="flex items-baseline justify-between border-b border-slate-200 pb-4 mb-8">
+                    <h2 class="text-2xl font-bold text-slate-800 tracking-tight flex items-center gap-3">
+                        <span class="text-brand-blue font-mono text-lg">03.</span> Education
+                    </h2>
+                    <span class="text-xs font-mono text-brand-blue tracking-widest hidden md:inline-block">// ACADEMIC HISTORY</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glow-card p-6 rounded-2xl bg-white border border-slate-100 shadow-lg shadow-slate-200/40 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-[10px] font-mono font-bold text-brand-blue bg-blue-50 px-2.5 py-1 rounded border border-blue-100">ASSOCIATE DEGREE</span>
+                                <span class="text-xs font-mono font-semibold text-slate-500">2023 — 2026</span>
+                            </div>
+                            
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-14 h-14 rounded-xl bg-slate-50 border border-slate-100 p-2 shrink-0 flex items-center justify-center overflow-hidden shadow-sm">
+                                    <img src="image/logo polines.png" alt="State Polytechnic of Semarang Logo" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="text-base font-bold text-slate-800 leading-snug">State Polytechnic of Semarang</h3>
+                                    <p class="text-xs font-semibold text-brand-teal mt-0.5">Associate Degree (D3) in Electronic Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500 font-mono leading-relaxed border-t border-slate-100 pt-3 mt-2">
+                            Focus: Industrial Automation & PLC Programming, Control System, Embedded Systems & Microcontroller Development, IoT, and Applied Electronics Design & Troubleshooting.
+                        </p>
+                    </div>
+
+                    <div class="glow-card p-6 rounded-2xl bg-white border border-slate-100 shadow-lg shadow-slate-200/40 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-[10px] font-mono font-bold text-slate-600 bg-slate-100 px-2.5 py-1 rounded border border-slate-200">HIGH SCHOOL</span>
+                                <span class="text-xs font-mono font-semibold text-slate-500">2019 — 2022</span>
+                            </div>
+                            
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-14 h-14 rounded-xl bg-slate-50 border border-slate-100 p-2 shrink-0 flex items-center justify-center overflow-hidden shadow-sm">
+                                    <img src="image/Logo SMAN 5 Semarang.png" alt="State Senior High School 5 Semarang Logo" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="text-base font-bold text-slate-800 leading-snug">State Senior High School 5 Semarang</h3>
+                                    <p class="text-xs font-semibold text-slate-500 mt-0.5">Science (MIPA) Major</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500 font-mono leading-relaxed border-t border-slate-100 pt-3 mt-2">
+                            Academic focus on Advanced Mathematics and Applied Physics. Additionally, gained foundational knowledge in electronics and electrical circuits.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="tab-section hidden">
+                <div class="flex items-baseline justify-between border-b border-slate-200 pb-4 mb-8">
+                    <h2 class="text-2xl font-bold text-slate-800 tracking-tight flex items-center gap-3">
+                        <span class="text-brand-blue font-mono text-lg">04.</span> Projects
+                    </h2>
+                    <span class="text-xs font-mono text-brand-blue tracking-widest hidden md:inline-block">// ENGINEERING PORTFOLIO</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glow-card rounded-3xl p-6 md:p-8 bg-white border border-slate-100 shadow-xl shadow-slate-200/50 space-y-4 border-l-4 border-l-brand-blue">
+                        <h3 class="text-xl font-bold text-slate-900">Haiwell PLC & ESP32 Box System</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Designing and building an automatic product box-filling system based on Haiwell PLC and ESP32 microcontroller, utilizing an infrared sensor.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-mono font-semibold text-slate-600 pt-2">
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Haiwell PLC</span>
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">ESP32</span>
+                        </div>
+                    </div>
+
+                    <div class="glow-card rounded-3xl p-6 md:p-8 bg-white border border-slate-100 shadow-xl shadow-slate-200/50 space-y-4">
+                        <h3 class="text-xl font-bold text-slate-900">ESP8266 Auto Fish Feeder</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Developing an IoT-based automatic ornamental fish feeder capable of dispensing feed on schedule. Integrated with Telegram bot.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-mono font-semibold text-slate-600 pt-2">
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">ESP8266</span>
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Telegram API</span>
+                        </div>
+                    </div>
+
+                    <div class="glow-card rounded-3xl p-6 md:p-8 bg-white border border-slate-100 shadow-xl shadow-slate-200/50 space-y-4">
+                        <h3 class="text-xl font-bold text-slate-900">Ultrasonic Water Level Monitor</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Real-time water level monitoring using HC-SR04 ultrasonic sensors connected to Arduino Uno, visualized via custom LabVIEW dashboard.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-mono font-semibold text-slate-600 pt-2">
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Arduino Uno</span>
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">LabVIEW</span>
+                        </div>
+                    </div>
+
+                    <div class="glow-card rounded-3xl p-6 md:p-8 bg-white border border-slate-100 shadow-xl shadow-slate-200/50 space-y-4">
+                        <h3 class="text-xl font-bold text-slate-900">Arduino Smart Lecturer Room</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            An Arduino-based smart room system featuring an automated door security and environment monitoring, visualized using MATLAB GUI.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-mono font-semibold text-slate-600 pt-2">
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Arduino</span>
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">MATLAB GUI</span>
+                        </div>
+                    </div>
+
+                    <div class="glow-card rounded-3xl p-6 md:p-8 bg-white border border-slate-100 shadow-xl shadow-slate-200/50 space-y-4">
+                        <h3 class="text-xl font-bold text-slate-900">LM358 Fire Detection System</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Effective automatic fire detection analog system using a photodiode sensor and an LM358 IC operational amplifier voltage comparator.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-mono font-semibold text-slate-600 pt-2">
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Analog Circuit</span>
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">LM358 IC</span>
+                        </div>
+                    </div>
+
+                    <div class="glow-card rounded-3xl p-6 md:p-8 bg-white border border-slate-100 shadow-xl shadow-slate-200/50 space-y-4">
+                        <h3 class="text-xl font-bold text-slate-900">ATMega8535 PCB Etching Tool</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Automated PCB etching tool controlled by an ATMega8535 microcontroller to streamline custom hardware fabrication.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-mono font-semibold text-slate-600 pt-2">
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">ATMega8535</span>
+                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Hardware Fab</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white/50 backdrop-blur-md py-10 mt-auto text-center text-xs font-mono text-slate-500 space-y-4">
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-semibold text-slate-600">
+            <a href="mailto:shafanisa.33223024@mhs.polines.ac.id" class="hover:text-brand-blue transition">Email</a>
+            <span>•</span>
+            <a href="https://wa.me/628970036069" target="_blank" class="hover:text-brand-blue transition">WhatsApp</a>
+            <span>•</span>
+            <a href="https://www.linkedin.com/in/shafanisa-aulia-bahri-54b24b375" target="_blank" class="hover:text-brand-blue transition">LinkedIn</a>
+            <span>•</span>
+            <a href="https://www.instagram.com/shafanisaab" target="_blank" class="hover:text-brand-blue transition">Instagram</a>
+        </div>
+        <p>&copy; 2026 Shafanisa Aulia Bahri. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
